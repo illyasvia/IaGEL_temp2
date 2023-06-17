@@ -1,0 +1,21 @@
+# files
+model:
+path: save/dataset_movielen/operator_GraphSAGE
+pic_path: picture
+
+# taining parameters
+learning_rate: 0.001
+epoch: 200
+batch_size: 10
+pos_intention: 50
+neg_intention: 50
+max_intention: 4
+dataset: movielen
+hop: 2
+alpha: 0.5
+beta: 1
+
+# new model
+device: cuda:3
+dropout: 0.0
+operator: GIN
